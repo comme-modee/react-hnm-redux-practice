@@ -1,0 +1,110 @@
+* { margin: 0; padding: 0; box-sizing: border-box; }
+.nav-container {
+  display: grid;
+  gap: 20px;
+  width: 100vw;
+}
+.nav-container > .login-btn > a {
+  display: flex;
+  justify-content: right;
+  align-items: center;
+  gap: 8px;
+  justify-self: end;
+  padding: 16px;
+  text-decoration: none;
+  color: #000;
+  padding-right: 40px;
+}
+.nav-container > .main-logo {
+  justify-self: center;
+  width: 160px;
+}
+.nav-container > .main-logo > a > img {
+  width: 100%;
+}
+.nav-container > .nav-bottom {
+  justify-self: center;
+  position: relative;
+  width: 100%;
+  height: 50px;
+}
+.nav-container > .nav-bottom > .menu { position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); }
+.nav-container > .nav-bottom > .menu > ul { display: flex; list-style: none; gap: 30px; }
+.nav-container > .nav-bottom > .search { position: absolute; top: 50%; right: 40px; transform: translateY(-50%); }
+.nav-container > .nav-bottom > .search > #search { border: none; border-bottom: 1px solid #000; }
+
+.product-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1%;
+  width: 90%;
+  max-width: 1280px;
+  margin: 50px auto;
+}
+.product-container > a {
+  text-decoration: none;
+  color: #000;
+}
+.product-container > a > .product > .img { height: 80%; }
+.product-container > a > .product > .img > img { width: 100%; height: 100%; object-fit: cover; }
+.product-container > a > .product > .info { height: 20%; }
+
+
+.login-form { 
+  width: 400px;
+  height: 500px;
+  margin: 100px auto;
+}
+.login-form > .login {
+  width: 450px;
+  height: 510px;
+  background-color: #fff;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  border-radius: 6px;
+  overflow: hidden;
+}
+.login-form > .login > .header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 130px;
+  color: #fff;
+  font-size: 30px;
+  background-color: #6973e3;
+}
+.login-form > .login > .header > img {
+  width: 220px;
+}
+.login-form > .login > .form {
+  width: 100%;
+  height: 380px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.login-form > .login > .form > .wrap {
+  width: 80%;
+  height: 70%;
+}
+.login-form > .login > .form > .wrap > div {
+padding-bottom: 20px;
+}
+.login-form > .login > .form > .wrap input {
+  width: 100%;
+  height: 38px;
+  border: 1px solid #dfdfdf;
+  padding-left: 10px;
+}
+.login-form > .login > .form > .wrap input::placeholder {
+  color: #969696;
+}
+.login-form > .login > .form > .login-form-btn {
+  width: 70px;
+  height: 38px;
+  color: #fff;
+  background-color: #6973e3;
+  border: none;
+  border-radius: 4px;
+}
